@@ -1,0 +1,12 @@
+[Unit]
+Description=Domain Checker Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/your/domain_checker.py
+Restart=always
+User=your_username
+Group=your_group
+
+[Install]
+WantedBy=multi-user.target
